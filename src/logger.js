@@ -17,7 +17,7 @@ const ENABLE_LOGS = getEnableLogs();
 const PATH = `/api/v2/logs?dd-api-key=${DATADOG_API_KEY}&ddsource=nodejs&service=${APPLICATION_NAME}`;
 
 const httpTransportOptions = {
-    host: 'https://http-intake.logs.datadoghq.com',
+    host: 'https://http-intake.us5.logs.datadoghq.com',
     path: PATH,
     ssl: true,
     hostname: LOG_HOST_NAME,
